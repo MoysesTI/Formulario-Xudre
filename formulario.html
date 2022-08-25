@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JS Calculo  -->
+    <link rel="stylesheet" href="./calculo.js">
+    <title>Formulario</title>
+</head>
+<body class="py-5 formulario">
+    <form action="https://formsubmit.co/joaoxudre@gmail.com" method="POST" value="https://moysesti.github.io/thanks.html">
+    <input type="hidden" name="_next" value="https://moysesti.github.io/thanks.html">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <div class="container px-4 container1">
+            <!-- logo -->
+            <div class="text-center">
+                <h1 class="pt-3 titlePrincipal">Formulario</h1>
+                <!-- <img class="img-fluid toplogo mt-4" src="" alt="Principallogo"> -->
+            </div>
+            <!-- Primeira divisão do form -->
+            <p class="paragraph title">
+                1- Qual o seu nome ?
+            </p>
+            <div class="input-group mb-3 nome">
+                <span class="input-group-text " id="basic-addon1" method="POST">Nome completo:</span>
+                <input type="text" class="form-control" placeholder="Digite aqui" aria-label="username" name="name" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Celular/Telefone:</span>
+                <input type="Telefone" class="form-control" placeholder="Digite aqui" aria-label="username" name="Telefone" aria-describedby="basic-addon1">
+            </div>
+            <!-- Segunda divisão do form -->
+            <p class="mt-2 question title">2 - Qual o seu gênero ?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" value="Homem" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                    Homem
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" value="Mulher" id="flexRadioDefault2" >
+                    <label class="form-check-label" for="flexRadioDefault2">
+                    Mulher
+                    </label>
+                </div><br>
+            <!-- Terceira divisao do form -->
+                <div class="ContainerConteudo"> 
+                <div class="id">  
+                    <div>
+                    <label class="title" for="inputIdade">3- Idade:</label>
+                    <input id="idade" type="number" name="Idade">
+                    </div>
+                    <br>
+                
+                    <!-- Quarta divisão do form -->
+                    <div>
+                        <label class="title" for="inputIdade" >4-Altura:</label>
+                        <input id="altura" type="number" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any" name="Altura" placeholder="Ex: 1,80">
+                        </div>
+                        <br>
+                    <!-- Quinta divisão do form -->
+                    <div>
+                        <label class="title" for="inputIdade">5 - Peso:</label>
+                        <input id="peso" type="number" name="Peso" placeholder="Ex: 80">
+                        </div>
+                        <br>
+                </div>
+                <!-- Calculando o IMC -->
+                <div id="resultado">
+                </div>
+                <br>
+
+                <div>
+                <input  type="hidden" type="text" id="resultadoImc" name="IMC" value="" invisible>
+                </div>
+
+            <!-- sexta divisão do form -->
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label title">6 - Objetivo:</label>
+                        <select class="form-select" id="validationCustom04" required name="objetivo">
+                            <option>Saude</option>
+                            <option>Hipertrofia</option>
+                            <option>Condicionamento físico</option>
+                            <option>Emagrecer</option>
+                            <option>reabilitação</option>
+                        </select>
+            <!-- Setima divisão do form -->
+            <p class="mt-3 question title">7 - Quais você acha que são suas qualidades?</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sim" name="Lesao">
+                <label class="form-check-label" for="inlineCheckbox2">Lesao</label>
+            </div>
+
+            <div class="form-check form-check-inline mt-2">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sim" name="Algum problema de Saúde">
+                <label class="form-check-label" for="inlineCheckbox2">Algum problema de saúde?</label>
+            </div>
+
+            <div class="form-check form-check-inline mt-2">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sim" name="Fumante">
+                <label class="form-check-label" for="inlineCheckbox2">Fumante</label>
+            </div>
+    
+            <div class="form-check form-check-inline mt-2">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sim" name="Bebidas Alcoólicas">
+                <label class="form-check-label" for="inlineCheckbox2">Bebidas Alcoólicas</label>
+            </div>
+
+            <div class="form-check form-check-inline mt-3">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sim" name="Hipertensão">
+                <label class="form-check-label" for="inlineCheckbox2">Hipertensão</label>
+            </div>
+
+            <div class="form-check form-check-inline mt-2">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sim" name="Hipotensão">
+                <label class="form-check-label" for="inlineCheckbox2">Hipotensão</label>
+            </div>
+            <div class="form-check form-check-inline mt-2">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sim" name="Diabetes">
+                <label class="form-check-label" for="inlineCheckbox2">Diabetes</label>
+            </div>
+            <div class="form-check form-check-inline mt-2">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sim" name="Hipoglicemia">
+                <label class="form-check-label" for="inlineCheckbox2">Hipoglicemia</label>
+            </div>
+            <div class="form-check form-check-inline mt-2">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sim" name="Hipotireoidismo">
+                <label class="form-check-label" for="inlineCheckbox2">Hipotireoidismo</label>
+            </div>
+            <div class="form-check form-check-inline mt-2">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sim" name="Intolerancia de alimentos">
+                <label class="form-check-label" for="inlineCheckbox2">Intolerância de alimentos</label>
+            </div>
+            <div class="form-check form-check-inline mt-2">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sim" name="Faz uso de algum medicamento">
+                <label class="form-check-label" for="inlineCheckbox2">Faz uso de algum medicamento?</label>
+            </div>
+            <div class="form-check form-check-inline mt-2">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sim" name="Faz uso de suplemento alimentar">
+                <label class="form-check-label" for="inlineCheckbox2">Faz uso de suplemento alimentar?</label>
+            </div>
+            <div class="form-check form-check-inline mt-2">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sim" name="Realiza acompanhamento nutricional">
+                <label class="form-check-label" for="inlineCheckbox2">Realiza acompanhamento nutricional?</label>
+            </div>
+            <div class="mb-5 mt-4">
+                <label for="exampleFormControlTextarea1" class="form-label title">Objeções</label>
+                <textarea class="form-control" name="Objeções" id="exampleFormControlTextarea1" rows="3"></textarea method="POST">
+            </div>
+        </div>
+    <!-- Botão -->
+    <button id="calcule" class="btn btn-outline-warning"  href="./thanks.html">Enviar</button>
+    
+    </form>
+        <!-- Introducão E-mail -->
+                <div class="container text-center fotter">
+                    <p class="h6 text-center fotter">Feito por Moyses Maciel - 2021</p>
+                </div>
+        </div>
+    
+    <!-- Script  -->
+    <script src="./calculo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+</body>
+</html>

@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.backgroundThanks{
+        background: linear-gradient(45deg, #FEF5ED, #D3E4CD, #ADC2A9, #99A799);
+        background-size: 150% 150%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.containerImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.thanksIMG{
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 6px solid wheat;
+}
+.thanksP{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(8, 8, 8);
+}
+.thanksA{
+    padding: 10px;
+    color: white;
+    border: 4px solid wheat;
+    border-radius: 20px;
+    background-color: rgb(7, 7, 7);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thanksA:hover{
+    padding: 10px;
+    color: rgb(9, 9, 9);
+    border: 4px solid rgb(6, 5, 5);
+    border-radius: 20px;
+    background-color: wheat;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thanksP:hover{
+    color: white;
+}

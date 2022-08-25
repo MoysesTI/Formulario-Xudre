@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .formulario {
+    min-height: 100%;
+    background-image: url(../image/young-man-in-sportswear-an-exercise-class-in-a-gym.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .titlePrincipal{
+    color: rgb(250, 161, 27);
+  }
+  
+  .container1{
+    width: 600px;
+    background-color: rgb(12, 12, 12);
+    height: auto;
+    color: white;
+    opacity : 0.8;
+  }
+  .container1:hover{
+    opacity: 1;
+  }
+  .toplogo {
+    width: 185px;
+  }
+  
+  .paragraph {
+    margin: 8px 0px;
+  }
+  
+  .btnsend {
+    color: #ff0043;
+    border: 1px solid #ff0043;
+  }
+  .btnsend:hover {
+    background-color: red;
+    color: aliceblue;
+  }
+  
+  .fotter {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #f6f9f6fe;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .title{
+    color: aqua;
+  }
+  .result{
+    color: #f84d0f;
+
+  }
+  .calculoBtn{
+    text-decoration: none;
+    color: white;
+    border-radius: 9px;
+    background-color: #50f344;
+    border-radius: 4px solid black;
+  }

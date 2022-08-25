@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// body background
+.container00 {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container00{
+    &.container01{
+        background-image: url(../image/strong-man-training-in-gym.jpg);
+    }
+}
+.conteudoMain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabeçalo{
+    text-decoration: none;
+    font-size: 20px;
+    border: 6px solid rgb(64, 54, 54);
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    color: white;
+}
+.cabeçalo:hover{
+    text-decoration: none;
+    font-size: 20px;
+    border: 6px solid rgb(7, 7, 7);
+    background-color: rgba(255, 7, 7, 0.694);
+    border-radius: 10px;
+    color: rgb(4, 4, 4);
+}
+
+.footerProfile{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+    padding-top: 10px;
+    align-items: center;
+}
+.logoImg{
+    width: 300px;
+    border-radius: 50%;
+    border: 6px solid rgb(6, 6, 6);
+    margin-right: 5px;
+}
+.informacao{
+    margin-left: 50px;
+    background-color: rgba(10, 10, 10, 0.676);
+    color: rgba(255, 255, 255, 0.875);
+    border: (6px solid rgb(64, 54, 54));
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+@media (max-width:900px) {
+    
+    .conteudoMain{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width:620px){
+    .footerProfile{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding-left: 90px;
+        align-items: center;
+    }
+    .informacao{
+        margin-left: 0px;
+        background-color: rgba(10, 10, 10, 0.676);
+        color: rgba(255, 255, 255, 0.875);
+        border: (6px solid rgb(64, 54, 54));
+        border-radius: 10px;
+        width: 290px;
+        text-align: center;
+    }
+}
